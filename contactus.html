@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us page</title>
+  <link rel="stylesheet" type="text/css" href="stylecontactus.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+  <link rel="stylesheet" type="text/css" href="lightslider.css">
+  <script src="JQuery3.3.1.js"></script>
+  <script src="lightslider.js"></script>
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <nav>
+    <a href="homepage.html" class="logo">
+      <img src="1.png">
+    </a>
+
+  <!-- Menu button -->
+  <input type="checkbox" class="menu-btn" id="menu-btn" name="">
+  <label class="menu-icon" for="menu-btn">
+    <span class="nav-icon"></span>
+  </label>
+
+    <ul class="menu">
+      <li><a href="homepage.html">HOME</a></li>
+      <li><a href="oldmoviespage.html">OLD MOVIES</a></li>
+      <li><a href="nowshowingmovies.html">NOW SHOWING</a></li>
+      <li><a href="bookingpage.html">BOOKING</a></li>
+      <li><a href="aboutuspage.html">ABOUT US</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+   <!--  <div class="search">
+      <input type="text" placeholder="Find Movies">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div> -->
+</nav>
+
+      
+
+<!-- Contact info and google map -->
+<section class="contact">
+  
+  <div class="content">
+    <h2>Contact Us</h2>
+    <p>"Thank you for visiting our contact us page! We're delighted to hear from you and look forward to answering any questions you may have. Whether you're interested in learning more about our products and services, have a suggestion for how we can improve, or just want to say hello, we're here to help. Please don't hesitate to reach out. We can't wait to hear from you!"</p>
+  </div>
+
+  <div class="container">
+    <div class="contactInfo">
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="text">
+          <h3>Address</h3>
+          <p>No.289 (A Pyay Rd</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text">
+          <h3>Phone</h3>
+          <p>09789888222</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="text">
+          <h3>Email</h3>
+          <p>futureflimproduction@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+   <div id="map">
+ <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.4166828558914!2d96.1333070153353!3d16.805672423743147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb45fceefc75%3A0xe212bff0f1a5c596!2sGUSTO%20University!5e0!3m2!1sen!2smm!4v1677761249006!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   </div>
+</div>    
+
+</section>
+ 
+ <!-- Contact Form    -->
+<section id="contactForm">
+  <div class="contactForm">
+      <form>
+        <h2>Send Message</h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Full Name" name="" required="required">
+        </div>
+
+        <div class="inputBox">
+          <input type="text" placeholder="Email" name="" required="required">
+        </div>
+
+        <div class="inputBox">
+         <textarea  style="resize: none; width: 90%; height: 150px;" required="required" placeholder="Type your Message here...."></textarea>
+      </div>
+
+          <div class="inputBox">
+         <input onclick="myFunction()" type="submit" name="" value="Send">
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+<!-- Social Media icons -->
+<div class="grid">
+ <div class="wrapper">
+  
+  <div class="button">
+    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+    <a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a>
+  </div>
+
+ <div class="button">
+    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+     <a href="https://twitter.com/" target="_blank"><span>Twitter</span></a>
+  </div>
+
+  <div class="button">
+    <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+   <a href="https://www.instagram.com/" target="_blank"> <span>Instagrm</span></a>
+  </div>
+
+  <div class="button">
+    <div class="icon"><i class="fa-brands fa-github"></i></div>
+    <a href="https://github.com/" target="_blank"><span>Github</span></a>
+  </div>
+
+  <div class="button">
+    <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+    <a href="https://www.youtube.com/" target="_blank"><span>Youtube</span></a>
+  </div>
+</div>
+</div>
+   
+ 
+ <!-- footer -->
+<footer>
+  <p> &copy; Copyright 2023 - Future Flim Production Co.,LTD.</p>
+</footer> 
+
+
+<!-- Fucntion for pop up -->
+<script type="text/javascript">
+function myFunction() {
+  alert("Thank you for Contacting Us!");
+}
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking page</title>
+  <link rel="stylesheet" type="text/css" href="stylebooking.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+  <link rel="stylesheet" type="text/css" href="lightslider.css">
+  <script src="JQuery3.3.1.js"></script>
+  <script src="lightslider.js"></script>
+</head>
+<body>
+
+
+
+  <!-- navigation bar -->
+  <nav>
+    <a href="homepage.html" class="logo">
+      <img src="1.png">
+    </a>
+
+<!-- Menu button -->
+  <input type="checkbox" class="menu-btn" id="menu-btn" name="">
+  <label class="menu-icon" for="menu-btn">
+    <span class="nav-icon"></span>
+  </label>
+
+<ul class="menu">
+      <li><a href="homepage.html">HOME</a></li>
+      <li><a href="oldmoviespage.html">OLD MOVIES</a></li>
+      <li><a href="nowshowingmovies.html">NOW SHOWING</a></li>
+      <li><a href="bookingpage.html">BOOKING</a></li>
+      <li><a href="aboutuspage.html">ABOUT US</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+    <!-- <div class="search">
+      <input type="text" placeholder="Find Movies">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div> -->
+</nav>
+      
+
+<!-- The whole layout -->
+<section id="movie-container"> 
+
+<!-- Selecter  -->
+<div class="movie-container">
+  <label>Select a movie:</label>
+  <select id="movie">
+    <option value="20">Antman and Warsp:Quantumania <span style="color: red;">(20$)</span></option>
+    <option value="10">The First Slam Dunk <span style="color: red;">(10$)</span></option>
+    <option value="15">Pathaan <span style="color: red;">(15$)</span></option>
+    <option value="25">Avatar:The Way of Water <span style="color: red;">(25$)</span></option>
+    <option value="5">Avatar <span style="color: red;">(5$)</span></option>
+    <option value="5">Karate Kid <span style="color: red;">(5$)</span></option>
+    <option value="5">Mission: Impossible – Ghost Protocol <span style="color: red;">(5$)</span></option>
+    <option value="5">Hotel Transylvania <span style="color: red;">(5$)</span></option>
+    <option value="5">Spirited Away <span style="color: red;">(5$)</span></option>
+    <option value="5">Boss <span style="color: red;">(5$)</span></option>
+    <option value="5">PK <span style="color: red;">(5$)</span></option>
+    <option value="5">Train to Busan <span style="color: red;">(5$)</span></option>
+    <option value="5">Parasite <span style="color: red;">(5$)</span></option>
+    <option value="5">Glass <span style="color: red;">(5$)</span></option>
+    <option value="5">Love and Monster <span style="color: red;">(5$)</span></option>
+    <option value="5">Violet Evergarden: The Movie <span style="color: red;">(5$)</span></option>
+    <option value="5">Tokyo Story <span style="color: red;">(5$)</span></option>
+    <option value="5">Drunk Master <span style="color: red;">(5$)</span></option>
+  </select>
+</div>
+
+<!-- Showcase -->
+<ul class="showcase">
+  <li>
+    <div class="seat"></div>
+    <small>Available</small>
+  </li>
+  <li>
+    <div class="seat selected"></div>
+    <small>Selected</small>
+  </li>
+  <li>
+    <div class="seat sold"></div>
+    <small>Taken</small>
+  </li>
+</ul>
+
+<!-- Screen picture -->
+<div class="container">
+  <div class="screen"></div>
+
+<!-- seats -->
+  <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+  </div>
+
+   <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+  </div>
+
+   <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"></div>
+  </div>
+
+   <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"></div>
+  </div>
+
+  <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"></div>
+  </div>
+
+  <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"S></div>
+  </div>
+
+  <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"S></div>
+  </div>
+
+  <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat sold"></div>
+    <div class="seat sold"S></div>
+  </div>
+</div>
+
+<!-- Text   -->
+<p class="text">
+  You have selected <span id="count" style="color: red;">0</span> seat for a price of $. <span id="total" style="color: red;">0</span>
+</p>
+
+<a href="checkout.html" target="_blank"><button class="pp">Purchase</button></a>
+
+</section>
+
+<div class="footer">
+<footer>
+ <p> &copy; Copyright 2023 - Future Flim Production Co.,LTD.</p>
+</footer>  
+</div>
+
+
+<!-- Function for seat select -->
+<script type="text/javascript">
+  
+const container = document.querySelector(".container");
+const seats = document.querySelectorAll(".row .seat:not(.sold)");
+const count = document.getElementById("count");
+const total = document.getElementById("total");
+const movieSelect = document.getElementById("movie");
+
+populateUI();
+  
+let ticketPrice = +movieSelect.value;
+
+// Save selected movie index and price
+function setMovieData(movieIndex, moviePrice) {
+  localStorage.setItem("selectedMovieIndex", movieIndex);
+  localStorage.setItem("selectedMoviePrice", moviePrice);
+}
+
+// Update total and count
+function updateSelectedCount() {
+  const selectedSeats = document.querySelectorAll(".row .seat.selected");
+
+  const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
+
+  localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
+
+  const selectedSeatsCount = selectedSeats.length;
+
+  count.innerText = selectedSeatsCount;
+  total.innerText = selectedSeatsCount * ticketPrice;
+
+  setMovieData(movieSelect.selectedIndex, movieSelect.value);
+}
+
+// Get data from localstorage and populate UI  
+function populateUI() {
+  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
+
+  if (selectedSeats !== null && selectedSeats.length > 0) {
+    seats.forEach((seat, index) => {
+      if (selectedSeats.indexOf(index) > -1) {
+        console.log(seat.classList.add("selected"));
+      }
+    });
+  }
+
+const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
+
+  if (selectedMovieIndex !== null) {
+    movieSelect.selectedIndex = selectedMovieIndex;
+    console.log(selectedMovieIndex)
+  }
+}
+console.log(populateUI())
+
+movieSelect.addEventListener("change", (e) => {
+  ticketPrice = +e.target.value;
+  setMovieData(e.target.selectedIndex, e.target.value);
+  updateSelectedCount();
+});
+
+// Seat click event
+container.addEventListener("click", (e) => {
+  if (
+    e.target.classList.contains("seat") &&
+    !e.target.classList.contains("sold")
+  ) {
+    e.target.classList.toggle("selected");
+
+    updateSelectedCount();
+  }
+});
+
+// Initial count and total set
+updateSelectedCount();
+
+</script>
+
+<!-- Funtion for scrolldown -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    var movie = $('movie');
+    $('#movie').on('click',
+        function() {
+            select.val("desiredOne")[0].scrollIntoView();
+        });
+});
+</script>
+
+
+
+
+</body>
+</html>

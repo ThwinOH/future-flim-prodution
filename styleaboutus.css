@@ -1,0 +1,487 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  background-color: rgba(151, 151, 151,0.03);
+}
+*{
+  box-sizing: border-box;
+}
+
+/*navigation bar*/
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border:1px solid rgba(0, 0, 0, 0.04);
+  background-color: #FCB041;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.logo img{
+  height: 50px;
+}
+nav .menu{
+  display: flex;
+}
+nav .menu li a{
+  height: 40px;
+  line-height: 43px;
+  margin: 0px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #585858;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+}
+.search {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(245, 245, 245, 0.8) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0px 20px;
+}
+.search input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search i{
+  color: #3a3a3a;
+}
+nav .menu li a:hover{
+  background-color: #242424;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
+  transition: all ease 0.2s;
+}
+
+/*Responsive navigation bar*/
+  nav .menu-btn{
+    display: none;
+  }
+
+@media(max-width:1100px){
+  nav{
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 10px;
+  }
+  nav .menu{
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background: #FCB041;
+    border-bottom: 4px solid #242424;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .menu li{
+    width: 100%;
+  }
+  nav .menu li a{
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    margin: 0px;
+    padding: 25px;
+    border: 1px solid rgba(38, 38, 38, 0.3);
+  }
+  nav .menu-icon{
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    display: block;
+  }
+  nav .menu-icon .nav-icon{
+    background-color: #333333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  nav .menu-icon .nav-icon:before,
+  nav .menu-icon .nav-icon:after{
+    background-color: #333333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+  nav .menu-icon .nav-icon:before{
+    top: -5px;
+  }
+  nav .menu-icon .nav-icon:after{
+    top: -5px;
+  }
+  nav. menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+     transform: rotate(45deg);
+     top: 0;
+  }
+  nav .menu-btn{
+    display: none;
+  }
+  nav .menu-btn:checked ~ .menu{
+    display: block;
+  }
+ }
+
+/*íntro*/
+ .about{
+ margin-top: 70px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .about .main img{
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+ }
+ .all-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+  text-align: justify;
+ }
+ .main{
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .all-text h4{
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+ }
+ .all-text h1{
+  font-size: 35px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.all-text p{
+  font-size: 16px;
+  color: #777777;
+  line-height: 25px;
+}
+.btn button{
+  background: #FCB041;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #777777;
+}
+@media screen and (max-width: 1250px){
+  .about{
+
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+  }
+  .all-text{
+    text-align: center;
+  }
+}
+
+
+hr {
+  margin-top: 45px;
+  border: none;
+  border-top: 2px solid #d3d3d3; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+
+/*Profile*/
+.helsman{
+  text-align: center;
+  font-size: 15px;
+  text-decoration: underline;
+  
+}
+.main{
+     width: 100%;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 30px;
+}
+   .profile-card{
+     position: relative;
+     font-family: sans-serif;
+     width: 220px;
+     height: 220px;
+     background: #FCB041;
+     padding: 30px;
+     border-radius: 50%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+     margin: 0 25px;
+   }
+   .profile-card:hover{
+     border-radius: 10px;
+     height: 300px;
+   }
+   .profile-card .img{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: .6s;
+     z-index: 99;
+   }
+   .profile-card:hover .img{
+     transform: translateY(-60px);
+     }
+   .img img{
+     width: 100%;
+     border-radius: 100%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+   }
+   .profile-card:hover img{
+     border-radius: 10px;
+   }
+   .caption{
+     text-align: center;
+     transform: translateY(-80px);
+     opacity: 0;
+     transition: .6s;
+   }
+   .profile-card:hover .caption{
+     opacity: 1;
+
+   }
+   .caption h3{
+     font-size: 21px;
+     font-family: sans-serif;
+   }
+   .caption p{
+     font-size: 15px;
+     color: #0c52a1;
+     font-family: sans-serif;
+     margin: 2px 0 9px 0;
+   }
+   .caption .social-links a{
+     color: #333;
+     margin-right: 10px;
+     font-size: 21px;
+     transition: .6s;
+   }
+   .social-links a:hover{
+     color: #0c52a1;
+   }
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  
+  .profile-card {
+    margin: 10px;
+  }
+}
+
+
+/*Services*/
+.title h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.services{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 55px auto;
+}
+.card{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 20px;
+  padding: 20px 20px;
+  background-color: #fdfff5;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card .icon{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.card h2{
+  font-size: 28px;
+margin-bottom: 20px;
+}
+.card p{
+  font-size: 17px;
+  margin-bottom: 30px;
+line-height: 1.3;
+ text-align: justify1;
+}
+.card:hover {
+ transform: translateY(-10px);
+  transition: all ease;
+  background-color: #FCB041;
+  transition: 0.4s;
+}
+@media screen and (max-width: 940px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 85%;
+    display: flex;
+    margin: 20px 0px;
+  }
+  .card .icon{
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.card h2{
+  font-size: 19px;
+margin-bottom: 10px;
+}
+.card p{
+  font-size: 12px;
+  margin-bottom: 30px;
+line-height: 1.3;
+ text-align: justify;
+}
+}
+
+
+/*Cinemas*/
+.cinema-heading{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about-cinema{
+ width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+ }
+ .about-cinema .main-cinema img{
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+ }
+ .all-text-cinema {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+  text-align: justify;
+ }
+ .main-cinema{
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .all-text-cinema h4{
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+ }
+ .all-text-cinema h1{
+  font-size: 35px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.all-text-cinema p{
+  font-size: 16px;
+  color: #777777;
+  line-height: 25px;
+}
+@media screen and (max-width: 1250px){
+  .about{
+
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+  }
+  .all-text{
+    text-align: center;
+  }
+}
+
+/*footer*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: cneter;
+  border-top:1px solid rgba(0, 0, 0, 0.01);
+  background-color: #FCB041 ;
+}
+footer p{
+  color: #5e5e5e;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+

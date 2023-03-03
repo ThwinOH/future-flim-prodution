@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+  <link rel="stylesheet" type="text/css" href="lightslider.css">
+  <script src="JQuery3.3.1.js"></script>
+  <script src="lightslider.js"></script>
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <nav>
+    <a href="homepage.html" class="logo">
+      <img src="1.png">
+    </a>
+
+  <!-- Menu button -->
+  <input type="checkbox" class="menu-btn" id="menu-btn" name="">
+  <label class="menu-icon" for="menu-btn">
+    <span class="nav-icon"></span>
+  </label>
+
+    <ul class="menu">
+      <li><a href="homepage.html">HOME</a></li>
+      <li><a href="oldmoviespage.html">OLD MOVIES</a></li>
+      <li><a href="nowshowingmovies.html">NOW SHOWING</a></li>
+      <li><a href="bookingpage.html">BOOKING</a></li>
+      <li><a href="aboutuspage.html">ABOUT US</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Find Movies">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+</nav>
+      
+
+<!-- Intro video -->
+<section class="container">
+  <div class="video-container">
+    <video src="1.mp4" autoplay muted loop></video>
+  </div>
+</section>
+
+<!-- Get Ticket Button -->
+<section class="but-gt">
+ <div >
+<a href="bookingpage.html"><button class="glow-on-hover" type="button">Get Tickets Now!</button></a>
+</div> 
+</section>
+
+<!-- Lightslider -->
+<section id="main">
+  <h1 class="up-heading">Upcoming Movies</h1>
+  <ul id="autoWidth" class="cs-hidden">
+    <li class="item-a">
+     <div class="up-box">
+       <img src="1.jpg">
+     </div>
+    </li>
+     <li class="item-b">
+     <div class="up-box">
+       <img src="2.jpg">
+     </div>
+    </li>
+     <li class="item-c">
+     <div class="up-box">
+       <img src="3.jpg">
+     </div>
+    </li>
+     <li class="item-d">
+     <div class="up-box">
+       <img src="4.jpg">
+     </div>
+    </li>
+     <li class="item-e">
+     <div class="up-box">
+       <img src="5.jpg">
+     </div>
+    </li>
+     <li class="item-f">
+     <div class="up-box">
+       <img src="10.jpg">
+     </div>
+    </li>
+    <li class="item-g">
+     <div class="up-box">
+       <img src="11.jpg">
+     </div>
+    </li>
+  </ul>
+</section>
+
+<!-- Now showing movies -->
+<div class="now-heading">
+<h3>Now Showing</h3>
+</div>
+<section id="movie-list">
+  <div class="movie-box">
+    <div class="movie-img">
+      <img src="6.jpg">
+    </div>
+    <div class="movie-text">
+    <strong>Antman and Warsp:Quantumania</strong> 
+    <a href="bookingpage.html"><button>Get Ticket</button></a>
+    </div>
+  </div>
+
+  <div class="movie-box">
+    <div class="movie-img">
+      <img src="7.jpg">
+    </div>
+    <div class="movie-text">
+    <strong>The First Slam Dunk</strong> 
+    <a href="bookingpage.html"><button>Get Ticket</button></a>
+    </div>
+  </div>  
+
+  <div class="movie-box">
+    <div class="movie-img">
+      <img src="8.jpg">
+    </div>
+    <div class="movie-text">
+    <strong>Pathaan</strong> 
+    <a href="bookingpage.html"><button>Get Ticket</button></a>
+    </div>
+  </div>  
+
+  <div class="movie-box">
+    <div class="movie-img">
+      <img src="9.jpg">
+    </div>
+    <div class="movie-text">
+    <strong>Avatar:The Way of Water</strong> 
+    <a href="bookingpage.html"><button>Get Ticket</button></a>
+    </div>
+  </div>     
+</section>
+
+<!-- footer -->
+<footer>
+  <p> &copy; Copyright 2023 - Future Flim Production Co.,LTD.</p>
+</footer>  
+
+    
+<!-- For light slider funtion -->
+  <script>
+          $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+  </script>
+
+</body>
+</html>  
+
+  
+
+
+
+
+
+       
+  
+  
+    
+  
+
+    
+
+
+
+  
+  
+
+
+
+
